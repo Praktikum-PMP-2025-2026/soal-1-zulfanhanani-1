@@ -3,7 +3,8 @@
  *   Hari dan Tanggal    : Rabu, 29 April 2026
  *   Nama (NIM)          : Zulfan Hanani (13224105)
  *   Nama File           : soal1Rabu.c
- *   Deskripsi           : 
+ *   Deskripsi           : Soal 1 - Arsip Artefak Terkategori
+ *                         Membuat urutan artefak
  * 
  */
 
@@ -47,7 +48,7 @@ int main() {
                if (artefak[j+1].nilai > artefak[j].nilai){
                   nuker(&artefak[j+1], &artefak[j]);
                }else if (artefak[j].nilai == artefak[j+1].nilai){
-                  if (strcmp(artefak[j+1].nama, artefak[j].nama) > 0){
+                  if (strcmp(artefak[j].nama, artefak[j+1].nama) > 0){
                      nuker(&artefak[j+1], &artefak[j]);
                   }
                }
